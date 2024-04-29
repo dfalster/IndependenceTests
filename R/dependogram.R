@@ -81,7 +81,7 @@
 #' #variables. The pair (X1,X2) is independent of the pair (X3,X4), with
 #' #each pair having a correlation of 3/4.
 #' # NOTE: with B=1000, this one took 65s with nbclus=1 and 15s with nbclus=7 on my computer.
-# 'n <- 100
+#' n <- 100
 #'W1 <- rpois(n, 1)
 #'W3 <- rpois(n, 1)
 #'W4 <- rpois(n, 1)
@@ -117,7 +117,6 @@
 #' # Example 4.3: Test of mutual independence between 4 dependent binary 
 #' # variables which are 2-independent (pairwise) and also 3-independent
 #' # (any 3 of the 4 variables are mutually independent).
-#' ```{r}
 #' n <- 100
 #' W <- sample(x = 1:8, size = n, TRUE)
 #' X1 <- W %in% c(1, 2, 3, 5)
@@ -127,7 +126,6 @@
 #' X <- cbind(X1, X2, X3, X4)
 #' dependogram(X, vecd.or.p = c(1, 1, 1, 1), N = 10, B = 20, alpha = 0.05,
 #'             display = TRUE, graphics = TRUE)
-#' ```
 #' # Example 4.4: Test of serial independence of binary sequences of zeros
 #' # and ones. The sequence W is an i.i.d. sequence. The sequence Y is
 #' # dependent at lag 3.
